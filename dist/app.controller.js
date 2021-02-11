@@ -19,6 +19,15 @@ let AppController = class AppController {
     getHello() {
         return this.appService.getHello();
     }
+    getHello2() {
+        return this.appService.getHello2();
+    }
+    getHome() {
+        return this.appService.getHome();
+    }
+    getAboutUs() {
+        return this.appService.getAboutUs();
+    }
 };
 __decorate([
     common_1.Get(),
@@ -26,6 +35,27 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", String)
 ], AppController.prototype, "getHello", null);
+__decorate([
+    common_1.Get('hello2'),
+    common_1.Render('index.html'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Object)
+], AppController.prototype, "getHello2", null);
+__decorate([
+    common_1.Get(),
+    common_1.Render('home.html'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Object)
+], AppController.prototype, "getHome", null);
+__decorate([
+    common_1.Get('about-us'),
+    common_1.Render('about-us.html'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Object)
+], AppController.prototype, "getAboutUs", null);
 AppController = __decorate([
     common_1.Controller(),
     __metadata("design:paramtypes", [app_service_1.AppService])
