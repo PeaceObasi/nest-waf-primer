@@ -1,10 +1,10 @@
 {
     "type": "postgres",
     "host": "localhost",
-    "port": 5434,
+    "port": 5433,
     "username": "postgres",
     "password": "postgres",
-    "database": "nestwafprimer",
+    "database": "peace",
     "entities": [
         "dist/**/*.entity{.ts,.js}"
     ],

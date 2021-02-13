@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
+  //Constructor creates a variable name called appService assigned to AppService.
+  //So we use the variable name to get functions from the file AppService
   //This constructor function is used to inject the class appService into
   //this file (app.controller.ts). To be able to inject it, where appService object
   //is declared in this case app.service.ts, we need to add an '@injectables' (check
